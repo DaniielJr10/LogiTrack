@@ -1,23 +1,30 @@
+
+using LogiTrack.Infraestructura.Configuracion;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Registrar servicios
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Registrar conexión con PostgreSQL
+var cadenaConexion = builder.Configuration
+    .GetConnectionString("LogiTrack")
+    ?? throw new InvalidOperationException(
+        "No se encontró la cadena de conexión de LogiTrack.");
+
+builder.Services.AddInfraestructura(cadenaConexion);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurar pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

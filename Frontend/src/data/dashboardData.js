@@ -5,6 +5,7 @@ export const navItems = [
   { label: 'Flota', icon: 'fleet' },
   { label: 'Entregas', icon: 'delivery' },
   { label: 'Reports', icon: 'report' },
+  { label: 'LogiTrack AI', icon: 'spark', new: true },
 ]
 
 export const summaryCards = [

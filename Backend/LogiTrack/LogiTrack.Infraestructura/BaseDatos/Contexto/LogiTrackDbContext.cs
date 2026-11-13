@@ -1,12 +1,22 @@
+
+using Microsoft.EntityFrameworkCore;
+
 namespace LogiTrack.Infraestructura.BaseDatos.Contexto;
 
 /// <summary>
-/// Contexto base para la capa de persistencia.
-/// Se configurará con Entity Framework Core cuando la infraestructura de acceso a datos esté definida.
+/// Contexto principal de acceso a datos de LogiTrack.
+/// Administra la comunicación entre la aplicación y PostgreSQL.
 /// </summary>
-public class LogiTrackDbContext
+public class LogiTrackDbContext : DbContext
 {
-    public LogiTrackDbContext()
+    public LogiTrackDbContext(
+        DbContextOptions<LogiTrackDbContext> options)
+        : base(options)
     {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
     }
 }

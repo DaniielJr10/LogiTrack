@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("38517fef-43b9-4c4f-adaf-f9eb4650df04")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogiTrack.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b7af3208a677b0cc9d5a2350809096c3ad04fa0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9697e2c8e042737e9b8c35e0ffe8e3ad7735cf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogiTrack.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogiTrack.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

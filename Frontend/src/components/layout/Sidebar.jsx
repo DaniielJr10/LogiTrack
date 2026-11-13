@@ -14,10 +14,11 @@ export default function Sidebar() {
 
       <nav className="sidebar-nav" aria-label="Principal">
         <ul>
-          {navItems.map(({ label, icon, active }) => (
+          {navItems.map(({ label, icon, active, new: isNew }) => (
             <li key={label} className={`nav-item ${active ? 'active' : ''}`}>
               <span className="nav-icon"><Icon name={icon} /></span>
-              <span>{label}</span>
+              <span className="nav-text">{label}</span>
+              {isNew && <span className="nav-badge">Nuevo</span>}
             </li>
           ))}
         </ul>
