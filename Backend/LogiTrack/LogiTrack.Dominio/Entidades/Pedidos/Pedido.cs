@@ -10,13 +10,9 @@ public class Pedido
 
     public string NumeroPedido { get; set; } = string.Empty;
 
-    public string NombreCliente { get; set; } = string.Empty;
+    public Guid ClienteId { get; set; }
 
-    public string? DocumentoCliente { get; set; }
-
-    public string? TelefonoCliente { get; set; }
-
-    public string? CorreoCliente { get; set; }
+    public Cliente? Cliente { get; set; }
 
     public string DireccionEntrega { get; set; } = string.Empty;
 
