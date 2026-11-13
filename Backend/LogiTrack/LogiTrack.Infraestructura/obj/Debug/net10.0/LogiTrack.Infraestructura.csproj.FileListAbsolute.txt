@@ -1,0 +1,16 @@
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\bin\Debug\net10.0\LogiTrack.Infraestructura.deps.json
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\bin\Debug\net10.0\LogiTrack.Infraestructura.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\bin\Debug\net10.0\LogiTrack.Infraestructura.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\bin\Debug\net10.0\LogiTrack.Dominio.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\bin\Debug\net10.0\LogiTrack.Dominio.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.csproj.AssemblyReference.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.AssemblyInfoInputs.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.AssemblyInfo.cs
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.sourcelink.json
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrac.DBAC80F9.Up2Date
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\refint\LogiTrack.Infraestructura.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\LogiTrack.Infraestructura.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Infraestructura\obj\Debug\net10.0\ref\LogiTrack.Infraestructura.dll

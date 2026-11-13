@@ -1,0 +1,16 @@
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\bin\Debug\net10.0\LogiTrack.Aplicacion.deps.json
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\bin\Debug\net10.0\LogiTrack.Aplicacion.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\bin\Debug\net10.0\LogiTrack.Aplicacion.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\bin\Debug\net10.0\LogiTrack.Dominio.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\bin\Debug\net10.0\LogiTrack.Dominio.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.AssemblyInfo.cs
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.sourcelink.json
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrac.096BEE53.Up2Date
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\refint\LogiTrack.Aplicacion.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\LogiTrack.Aplicacion.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Aplicacion\obj\Debug\net10.0\ref\LogiTrack.Aplicacion.dll

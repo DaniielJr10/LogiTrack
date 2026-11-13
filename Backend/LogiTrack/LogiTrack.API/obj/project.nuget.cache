@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TXTumaX8JQA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daniel Jr\\Desktop\\LogiTrack\\Backend\\LogiTrack\\LogiTrack.API\\LogiTrack.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniel Jr\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.15\\microsoft.aspnetcore.openapi.10.0.15.nupkg.sha512",
+    "C:\\Users\\Daniel Jr\\.nuget\\packages\\microsoft.openapi\\2.13.0\\microsoft.openapi.2.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

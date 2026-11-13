@@ -1,0 +1,12 @@
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\bin\Debug\net10.0\LogiTrack.Dominio.deps.json
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\bin\Debug\net10.0\LogiTrack.Dominio.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\bin\Debug\net10.0\LogiTrack.Dominio.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.AssemblyInfoInputs.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.AssemblyInfo.cs
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.sourcelink.json
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\refint\LogiTrack.Dominio.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\LogiTrack.Dominio.pdb
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.Dominio\obj\Debug\net10.0\ref\LogiTrack.Dominio.dll

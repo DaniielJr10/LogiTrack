@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "LogiTrack.Aplicacion/1.0.0": {
+        "dependencies": {
+          "LogiTrack.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "LogiTrack.Aplicacion.dll": {}
+        }
+      },
+      "LogiTrack.Dominio/1.0.0": {
+        "runtime": {
+          "LogiTrack.Dominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LogiTrack.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogiTrack.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
