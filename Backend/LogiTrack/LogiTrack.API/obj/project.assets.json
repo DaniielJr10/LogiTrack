@@ -71,7 +71,10 @@
         },
         "runtime": {
           "bin/placeholder/LogiTrack.Infraestructura.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
