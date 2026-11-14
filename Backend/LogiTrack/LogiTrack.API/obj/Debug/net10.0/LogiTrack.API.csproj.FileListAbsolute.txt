@@ -127,3 +127,13 @@ C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\n
 C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Daniel Jr\Desktop\LogiTrack\Backend\LogiTrack\LogiTrack.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll

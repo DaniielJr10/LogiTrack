@@ -1,7 +1,10 @@
-import Icon from '../common/Icon'
-import { navItems } from '../../data/dashboardData'
+import Icon from '../common/Icon';
+import { navItems } from '../../data/dashboardData';
+import { useAuth } from '../../contextos/AuthContext';
 
 export default function Sidebar() {
+  const { user, roles } = useAuth();
+
   return (
     <aside className="sidebar">
       <div className="brand-block">
@@ -34,12 +37,12 @@ export default function Sidebar() {
       </div>
 
       <div className="profile-card">
-        <div className="avatar">DJ</div>
+        <div className="avatar">{(user?.nombres || 'U').charAt(0).toUpperCase()}</div>
         <div className="profile-meta">
-          <strong>Daniel Jr.</strong>
-          <span>Administrador</span>
+          <strong>{`${user?.nombres || ''} ${user?.apellidos || ''}`.trim() || 'Usuario'}</strong>
+          <span>{roles[0] || 'Usuario'}</span>
         </div>
       </div>
     </aside>
-  )
+  );
 }

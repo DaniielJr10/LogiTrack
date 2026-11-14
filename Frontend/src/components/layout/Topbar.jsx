@@ -1,6 +1,16 @@
-import Icon from '../common/Icon'
+import { Link, useNavigate } from 'react-router-dom';
+import Icon from '../common/Icon';
+import { useAuth } from '../../contextos/AuthContext';
 
 export default function Topbar() {
+  const navigate = useNavigate();
+  const { user, logout, isAdmin } = useAuth();
+
+  const cerrarSesion = async () => {
+    await logout();
+    navigate('/login', { replace: true });
+  };
+
   return (
     <header className="topbar">
       <label className="search-box" aria-label="Buscar">
@@ -19,7 +29,18 @@ export default function Topbar() {
         <button type="button" className="theme-button" aria-label="Tema">
           <Icon name="spark" />
         </button>
+
+        <Link to="/perfil" className="user-chip" title="Mi perfil">
+          <span className="user-chip__avatar">{(user?.nombres || 'U').charAt(0).toUpperCase()}</span>
+          <span className="user-chip__label">{user?.nombres || 'Usuario'}</span>
+        </Link>
+
+        {isAdmin && (
+          <Link to="/admin" className="secondary-button header-admin-button">Admin</Link>
+        )}
+
+        <button type="button" className="ghost-button" onClick={cerrarSesion}>Salir</button>
       </div>
     </header>
-  )
+  );
 }

@@ -3,4 +3,5 @@
   <Project Path="LogiTrack.Aplicacion/LogiTrack.Aplicacion.csproj" />
   <Project Path="LogiTrack.Dominio/LogiTrack.Dominio.csproj" />
   <Project Path="LogiTrack.Infraestructura/LogiTrack.Infraestructura.csproj" />
+  <Project Path="Pruebas/LogiTrack.Pruebas/LogiTrack.Pruebas.csproj" />
 </Solution>

@@ -53,6 +53,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.15, )"
@@ -1198,6 +1202,9 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
+              "C:\\Users\\Daniel Jr\\Desktop\\LogiTrack\\Backend\\LogiTrack\\LogiTrack.Aplicacion\\LogiTrack.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\Daniel Jr\\Desktop\\LogiTrack\\Backend\\LogiTrack\\LogiTrack.Aplicacion\\LogiTrack.Aplicacion.csproj"
+              },
               "C:\\Users\\Daniel Jr\\Desktop\\LogiTrack\\Backend\\LogiTrack\\LogiTrack.Dominio\\LogiTrack.Dominio.csproj": {
                 "projectPath": "C:\\Users\\Daniel Jr\\Desktop\\LogiTrack\\Backend\\LogiTrack\\LogiTrack.Dominio\\LogiTrack.Dominio.csproj"
               }
@@ -1221,6 +1228,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -1230,6 +1241,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [

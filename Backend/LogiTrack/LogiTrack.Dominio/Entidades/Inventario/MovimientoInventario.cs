@@ -1,3 +1,4 @@
+using LogiTrack.Dominio.Enumeraciones;
 
 namespace LogiTrack.Dominio.Entidades.Inventario;
 
