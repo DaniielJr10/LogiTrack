@@ -2,10 +2,8 @@ import Sidebar from '../../components/layout/Sidebar'
 import Topbar from '../../components/layout/Topbar'
 import WelcomeBanner from '../../components/dashboard/WelcomeBanner'
 import KpiCard from '../../components/dashboard/KpiCard'
-import LogisticsActivity from '../../components/dashboard/LogisticsActivity'
 import DeliveryTracking from '../../components/dashboard/DeliveryTracking'
 import FleetStatus from '../../components/dashboard/FleetStatus'
-import TopProducts from '../../components/dashboard/TopProducts'
 import LogiTrackAI from '../../components/dashboard/LogiTrackAI'
 import RecentActivity from '../../components/dashboard/RecentActivity'
 import { summaryCards } from '../../data/dashboardData'
@@ -26,13 +24,11 @@ export default function Dashboard() {
         </section>
 
         <section className="content-grid">
-          <LogisticsActivity />
           <DeliveryTracking />
           <FleetStatus />
         </section>
 
         <section className="bottom-grid">
-          <TopProducts />
           <LogiTrackAI />
           <RecentActivity />
         </section>

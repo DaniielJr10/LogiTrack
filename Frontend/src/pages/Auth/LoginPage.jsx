@@ -56,6 +56,7 @@ export default function LoginPage() {
           <div className="auth-header">
             <p className="eyebrow">Bienvenido</p>
             <h2>Iniciar sesión</h2>
+            <p className="auth-note">Modo frontend activo: el acceso es de demostración.</p>
           </div>
 
           <form className="auth-form" onSubmit={manejarEnvio}>

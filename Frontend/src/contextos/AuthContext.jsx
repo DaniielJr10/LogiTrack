@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { apiFetch } from '../servicios/api';
+import { variablesGlobales } from '../configuracion/entorno';
 
 const STORAGE_KEY = 'logitrack_session_v1';
 const AuthContext = createContext(null);
@@ -47,6 +48,33 @@ const leerSesionGuardada = () => {
   }
 };
 
+const crearSesionDemo = (credenciales = {}) => {
+  const emailNormalizado = `${credenciales.email ?? ''}`.trim().toLowerCase();
+  const nombres = `${credenciales.nombres ?? ''}`.trim() || 'Usuario';
+  const apellidos = `${credenciales.apellidos ?? ''}`.trim() || 'Demo';
+
+  if (!emailNormalizado) {
+    throw new Error('Debes ingresar un correo para continuar.');
+  }
+
+  return {
+    datos: {
+      token: `demo-token-${Date.now()}`,
+      expiraEnUtc: null,
+      usuario: {
+        id: `demo-${emailNormalizado}`,
+        nombres,
+        apellidos,
+        email: emailNormalizado,
+        userName: emailNormalizado,
+        phoneNumber: `${credenciales.phoneNumber ?? ''}`.trim(),
+        estaActivo: true,
+      },
+      roles: ['Usuario'],
+    },
+  };
+};
+
 export function AuthProvider({ children }) {
   const [session, setSession] = useState(() => leerSesionGuardada());
   const [loading, setLoading] = useState(true);
@@ -74,6 +102,12 @@ export function AuthProvider({ children }) {
   };
 
   const login = async (credenciales) => {
+    if (variablesGlobales.modoSoloFrontend) {
+      const payloadDemo = crearSesionDemo(credenciales);
+      guardarSesion(payloadDemo);
+      return payloadDemo;
+    }
+
     const payload = await apiFetch('/auth/login', {
       method: 'POST',
       body: credenciales,
@@ -88,6 +122,12 @@ export function AuthProvider({ children }) {
   };
 
   const register = async (credenciales) => {
+    if (variablesGlobales.modoSoloFrontend) {
+      const payloadDemo = crearSesionDemo(credenciales);
+      guardarSesion(payloadDemo);
+      return payloadDemo;
+    }
+
     const payload = await apiFetch('/auth/registro', {
       method: 'POST',
       body: credenciales,
@@ -102,6 +142,11 @@ export function AuthProvider({ children }) {
   };
 
   const logout = async () => {
+    if (variablesGlobales.modoSoloFrontend) {
+      setSession(null);
+      return;
+    }
+
     try {
       if (session?.token) {
         await apiFetch('/auth/logout', {

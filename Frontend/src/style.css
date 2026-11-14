@@ -44,9 +44,7 @@ html, body {
 
 body {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   padding: 0;
   background: #edf2f8;
 }
@@ -73,19 +71,19 @@ svg {
 
 #app {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  min-height: 100vh;
 }
 
 .app-shell {
   display: flex;
-  width: min(1560px, calc(100vw - 24px));
-  min-height: 900px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(242, 247, 255, 0.94));
-  border-radius: 24px;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 14px 30px rgba(9, 26, 56, 0.12);
-  border: 1px solid rgba(12, 30, 77, 0.06);
+  box-shadow: none;
+  border: none;
 }
 
 .sidebar {
@@ -96,6 +94,7 @@ svg {
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgba(132, 172, 255, 0.1);
+  overflow-y: auto;
 }
 
 .brand-block {
@@ -300,6 +299,7 @@ svg {
   flex: 1;
   background: rgba(246, 249, 255, 0.95);
   padding: 18px 20px 10px;
+  overflow-y: auto;
 }
 
 .topbar {
@@ -655,7 +655,7 @@ svg {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1.52fr 1.2fr 0.9fr;
+  grid-template-columns: minmax(0, 1.8fr) minmax(300px, 1fr);
   gap: 18px;
   margin-top: 22px;
 }
@@ -762,6 +762,7 @@ svg {
 }
 
 .map-card {
+  min-height: 420px;
   padding-bottom: 12px;
 }
 
@@ -771,7 +772,7 @@ svg {
 
 .map-surface {
   position: relative;
-  height: 270px;
+  height: 330px;
   margin-top: 8px;
   border-radius: 18px;
   overflow: hidden;
@@ -975,7 +976,7 @@ svg {
 .bottom-grid {
   margin-top: 22px;
   display: grid;
-  grid-template-columns: 1.18fr 1fr 0.9fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: 18px;
 }
 
@@ -1399,6 +1400,7 @@ svg {
     grid-template-columns: 1fr 1fr;
   }
 
+  .map-card,
   .status-card {
     grid-column: span 2;
   }
@@ -1406,15 +1408,14 @@ svg {
   .bottom-grid {
     grid-template-columns: 1fr 1fr;
   }
-
-  .ai-card {
-    grid-column: span 2;
-  }
 }
 
 @media (max-width: 920px) {
   .app-shell {
     flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
   }
 
   .sidebar {
@@ -1434,6 +1435,7 @@ svg {
     grid-template-columns: 1fr;
   }
 
+  .map-card,
   .status-card,
   .ai-card {
     grid-column: auto;
@@ -1445,7 +1447,8 @@ svg {
 }
 
 @media (max-width: 560px) {
-  body {
+  .auth-shell,
+  .status-page {
     padding: 12px;
   }
 
@@ -1636,6 +1639,12 @@ svg {
   letter-spacing: -0.06em;
   color: #112b5c;
   font-size: clamp(2rem, 2.2vw, 2.6rem);
+}
+
+.auth-note {
+  margin: 8px 0 0;
+  font-size: 0.84rem;
+  color: #48648f;
 }
 
 .auth-form {
