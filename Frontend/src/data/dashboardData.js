@@ -1,11 +1,13 @@
 export const navItems = [
-  { label: 'Dashboard', active: true, icon: 'home' },
-  { label: 'Inventario', icon: 'box' },
-  { label: 'Pedidos', icon: 'basket' },
-  { label: 'Flota', icon: 'fleet' },
-  { label: 'Entregas', icon: 'delivery' },
-  { label: 'Reports', icon: 'report' },
-  { label: 'LogiTrack AI', icon: 'spark', new: true },
+  { label: 'Dashboard', to: '/', active: true, icon: 'home' },
+  { label: 'Inventario', to: '/inventario', icon: 'box' },
+  { label: 'Pedidos', to: '/pedidos', icon: 'basket' },
+  { label: 'Flota', to: '/flota', icon: 'fleet' },
+  { label: 'Rutas', to: '/rutas', icon: 'report' },
+  { label: 'Despachos', to: '/despachos', icon: 'delivery' },
+  { label: 'Entregas', to: '/entregas', icon: 'delivery' },
+  { label: 'Usuarios', to: '/admin', icon: 'report' },
+  { label: 'LogiTrack AI', to: '/acceso-denegado', icon: 'spark', new: true },
 ]
 
 export const summaryCards = [

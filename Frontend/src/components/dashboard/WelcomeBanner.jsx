@@ -1,9 +1,14 @@
+import { useAuth } from '../../contextos/AuthContext';
+
 export default function WelcomeBanner() {
+  const { user } = useAuth();
+  const nombreUsuario = `${user?.nombres || ''} ${user?.apellidos || ''}`.trim() || 'Usuario';
+
   return (
     <section className="hero-banner">
       <div className="hero-copy">
         <h1>
-          ¡Hola, Daniel!
+          ¡Hola, {nombreUsuario}!
           <span className="hero-wave" aria-hidden="true">👋</span>
         </h1>
         <p>Aquí tienes el resumen de tu operación logística de hoy.</p>

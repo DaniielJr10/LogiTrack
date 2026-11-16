@@ -65,7 +65,7 @@ export default function RegisterPage() {
           <div className="auth-header">
             <p className="eyebrow">Nueva cuenta</p>
             <h2>Registro de usuario</h2>
-            <p className="auth-note">Modo frontend activo: el registro es de demostración.</p>
+            <p className="auth-note">Modo backend activo: registro real con la API de LogiTrack.</p>
           </div>
 
           <form className="auth-form" onSubmit={manejarEnvio}>

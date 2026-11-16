@@ -7,6 +7,12 @@ import ProfilePage from './pages/Auth/ProfilePage';
 import AdminUsersPage from './pages/Auth/AdminUsersPage';
 import AccessDeniedPage from './pages/Auth/AccessDeniedPage';
 import NotFoundPage from './pages/Auth/NotFoundPage';
+import InventarioPage from './pages/Operaciones/InventarioPage';
+import PedidosPage from './pages/Operaciones/PedidosPage';
+import FlotaPage from './pages/Operaciones/FlotaPage';
+import RutasPage from './pages/Operaciones/RutasPage';
+import DespachosPage from './pages/Operaciones/DespachosPage';
+import EntregasPage from './pages/Operaciones/EntregasPage';
 
 function ProtectedRoute({ children, requireRole }) {
   const { isAuthenticated, loading, hasRole } = useAuth();
@@ -50,6 +56,54 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/inventario"
+            element={
+              <ProtectedRoute>
+                <InventarioPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/pedidos"
+            element={
+              <ProtectedRoute>
+                <PedidosPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/flota"
+            element={
+              <ProtectedRoute>
+                <FlotaPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/rutas"
+            element={
+              <ProtectedRoute>
+                <RutasPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/despachos"
+            element={
+              <ProtectedRoute>
+                <DespachosPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/entregas"
+            element={
+              <ProtectedRoute>
+                <EntregasPage />
               </ProtectedRoute>
             }
           />

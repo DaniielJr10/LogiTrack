@@ -6,6 +6,7 @@ using LogiTrack.Infraestructura.Entidades.Roles;
 using LogiTrack.Infraestructura.Entidades.Usuarios;
 using LogiTrack.Infraestructura.Inicializacion;
 using LogiTrack.Infraestructura.Seguridad;
+using LogiTrack.Infraestructura.Servicios;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -45,6 +46,9 @@ public static class DependenciasInfraestructura
         services.AddScoped<ITokenServicio, TokenServicio>();
         services.AddScoped<IUsuarioActualServicio, UsuarioActualServicio>();
         services.AddScoped<IServicioAutenticacion, ServicioAutenticacion>();
+        services.AddScoped<IServicioInventario, ServicioInventario>();
+        services.AddScoped<IServicioPedidos, ServicioPedidos>();
+        services.AddScoped<IServicioLogistica, ServicioLogistica>();
         services.AddScoped<InicializadorRoles>();
 
         return services;

@@ -1,8 +1,10 @@
 using System.Text;
+using LogiTrack.Infraestructura.BaseDatos.Contexto;
 using LogiTrack.Infraestructura.Configuracion;
 using LogiTrack.Infraestructura.Inicializacion;
 using LogiTrack.Infraestructura.Seguridad;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,12 +30,12 @@ builder.Services.AddCors(options =>
 });
 
 var cadenaConexion = builder.Configuration.GetConnectionString("LogiTrack")
-    ?? throw new InvalidOperationException("No se encontró la cadena de conexión de LogiTrack. Configúrela en User Secrets con la clave ConnectionStrings:LogiTrack.");
+    ?? "Host=localhost;Port=5432;Database=logitrack;Username=postgres;Password=postgres;Include Error Detail=true";
 
 builder.Services.AddInfraestructura(cadenaConexion);
 
 var jwtSection = builder.Configuration.GetSection("Jwt");
-var jwtKey = jwtSection["Key"] ?? throw new InvalidOperationException("No se encontró la clave JWT. Configúrela en User Secrets con la clave Jwt:Key.");
+var jwtKey = jwtSection["Key"] ?? "logitrack-dev-secret-key-change-me-2026";
 
 builder.Services.AddAuthentication(options =>
     {
@@ -78,6 +80,9 @@ app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {
+    var db = scope.ServiceProvider.GetRequiredService<LogiTrackDbContext>();
+    await db.Database.MigrateAsync();
+
     var inicializador = scope.ServiceProvider.GetRequiredService<InicializadorRoles>();
     await inicializador.InicializarAsync();
 }

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Icon from '../common/Icon';
 import { navItems } from '../../data/dashboardData';
 import { useAuth } from '../../contextos/AuthContext';
@@ -17,11 +18,17 @@ export default function Sidebar() {
 
       <nav className="sidebar-nav" aria-label="Principal">
         <ul>
-          {navItems.map(({ label, icon, active, new: isNew }) => (
-            <li key={label} className={`nav-item ${active ? 'active' : ''}`}>
-              <span className="nav-icon"><Icon name={icon} /></span>
-              <span className="nav-text">{label}</span>
-              {isNew && <span className="nav-badge">Nuevo</span>}
+          {navItems.map(({ label, icon, to, new: isNew }) => (
+            <li key={label}>
+              <NavLink
+                to={to}
+                end={to === '/'}
+                className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+              >
+                <span className="nav-icon"><Icon name={icon} /></span>
+                <span className="nav-text">{label}</span>
+                {isNew && <span className="nav-badge">Nuevo</span>}
+              </NavLink>
             </li>
           ))}
         </ul>
